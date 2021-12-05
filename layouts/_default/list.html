@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <dl>
+        <dt>
+            <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a> <em>{{.Date | time.Format ":date_medium"}}</em>
+        </dt>
+    </dl>
+    {{ end }}
+{{ end }}
