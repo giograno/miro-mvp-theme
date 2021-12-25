@@ -1,11 +1,8 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
-name = "Mvp Hugo Minimal"
+name = "Miro MVP Theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/giograno/miro-mvp-theme/blob/master/LICENSE"
+description = "A trivial hugo template for simple landing page and blogging"
+homepage = "http://giograno.com/"
 tags = []
 features = []
 min_version = "0.41.0"
