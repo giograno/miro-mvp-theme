@@ -19,3 +19,8 @@ nav {
     --font-family: 'JetBrains Mono';
     --width-content: 700px;
 }
+
+footer {
+    text-align: center;
+    font-size: small;
+}
