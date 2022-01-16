@@ -5,15 +5,16 @@
     <h1>{{ .Title }}</h1>
     <time>{{ .Date | time.Format ":date_medium" }}</time>
   </header>
-  <section>{{ .Content }}</section>
-
+  
+  {{ .Content }}
+  ---
   {{ if .Params.tags }}
-  <footer>
-    <h3>tags:</h3>
-    {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
-    <a href="{{ $href }}">{{ . }}</a>
-    {{ end }}
-  </footer>
+  
+  <h3>tags:</h3>
+  {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
+  <a href="{{ $href }}">{{ . }}</a>
+  {{ end }}
+
   {{ end }}
 </article>
 
